@@ -1,0 +1,123 @@
+/* Cart Page Styles */
+.cart-page {
+    background-image: url('https://i.pinimg.com/564x/0a/be/92/0abe9229c939b8361f2d8a1085c3be0d.jpg'); /* Add your desired background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    color: white;
+  }
+  
+  /* Header Section */
+  .cart-header {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  
+  .cart-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffcc00; /* Yellow color */
+  }
+  
+  /* Cart Items Section */
+  .cart-items {
+    margin-top: 3rem;
+  }
+  
+  .cart-item {
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cart-item img {
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+  
+  .cart-item-title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .cart-item-price {
+    margin-top: 0.5rem;
+    color: #555;
+  }
+  
+  .remove-button {
+    background-color: #e53935;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #c62828;
+  }
+  
+  .remove-button svg {
+    margin-right: 0.5rem;
+  }
+  
+  /* Empty Cart Message */
+  .empty-cart-message {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+  
+  /* Proceed to Purchase Button */
+  .proceed-button-container {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .proceed-button {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .proceed-button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  .proceed-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .cart-item {
+      margin: 0.75rem;
+    }
+  }
+  

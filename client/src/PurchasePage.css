@@ -1,0 +1,87 @@
+/* Purchase Page Styles */
+.purchase-page {
+  background-image: url('https://i.pinimg.com/564x/9a/69/c2/9a69c2e1e46eab161bd024d347ec459b.jpg'); /* Add your desired background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Form Container */
+.purchase-form {
+  background-color: rgba(31, 31, 31, 0.9); /* Dark transparent background */
+  padding: 3rem;
+  border-radius: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Form Title */
+.purchase-title {
+  font-size: 2.5rem;
+  color: #ffcc00; /* Yellow color */
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.purchase-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus Effect */
+.purchase-input:focus {
+  border-color: #ff6a00; /* Highlight color */
+  outline: none;
+}
+
+/* Button Styling */
+.purchase-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.purchase-button:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+.purchase-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .purchase-form {
+    padding: 2rem;
+  }
+
+  .purchase-title {
+    font-size: 2rem;
+  }
+
+  .purchase-input,
+  .purchase-button {
+    font-size: 1rem;
+  }
+}
